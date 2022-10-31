@@ -2,7 +2,8 @@
 
 ## How to use
 
+Add this line to your `<head>`:
 
-```txt
-https://raw.githubusercontent.com/aaronlyy/yac.css/main/src/yac.css
+```html
+<link rel="stylesheet" href="https://raw.githubusercontent.com/aaronlyy/yac.css/main/src/yac.css">
 ```
