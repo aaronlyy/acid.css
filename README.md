@@ -2,7 +2,7 @@
   <img src=".\media\banner.png" alt="banner" style="width: 265px">
 </p>
 
-<h3 align="center" >[Y]et [A]nother [C]lassless CSS framework</h3>
+<h3 align="center" >Yet another classless CSS framework</h3>
 
 ## How to use
 
