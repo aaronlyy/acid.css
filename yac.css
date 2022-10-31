@@ -1,0 +1,292 @@
+/* define light & darkmode colors */
+@media (prefers-color-scheme: light) {
+    :root {
+        --primary-color: rgb(49,49,49);
+        --primary-color-pale: rgb(93, 93, 93);
+        --accent-color: rgb(225, 160, 91);
+
+        --background-color: rgb(233,233,233);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: rgb(255,255,255);
+        --primary-color-pale: rgb(184, 184, 184);
+        --accent-color: rgb(136, 60, 179);
+
+        --background-color: rgb(18,18,18);
+        --background-color-pale: rgb(30, 30, 30);
+    }
+}
+
+/* general root variables */
+:root {
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --font-mono: monospace;
+    --font-size: 16px;
+}
+
+/* resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html */
+html {
+    font-family: var(--font-sans);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+}
+
+/* body */
+body {
+    color: var(--primary-color);
+
+    /* set max width and center body */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* padding */
+    padding: .8rem;
+
+    /* set background color */
+    background-color: var(--background-color);
+
+    /* base font size & line height*/
+    line-height: 1.5;
+}
+
+/* text selection */
+::selection {
+    background-color: var(--accent-color);
+}
+
+/* h tags font sizes */
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+/* a */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--accent-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* mark */
+mark {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+/* --- code, samp, var, pre, kbd --- */
+code, samp, var, kbd {
+    color: var(--primary-color-pale);
+    background-color: var(--background-color-pale);
+    font-family: var(--font-mono);
+    border-radius: 2px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+pre {
+    color: var(--primary-color-pale);
+    background-color: var(--background-color-pale);
+    border: 1px solid var(--primary-color-pale);
+    border-radius: 2px;
+    padding-left: .8rem;
+    padding-top: .5rem;
+    padding-bottom: .7rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    overflow: auto;
+}
+
+kbd {
+    border: 1px solid var(--accent-color);
+    background-color: var(--background-color-pale);
+    border-radius: 2px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .1rem;
+    padding-bottom: .1rem;
+}
+
+/* --- blockquote  --- */
+blockquote {
+    font-style: italic;
+    background-color: var(--background-color-pale);
+    border-left: 3px solid var(--accent-color);
+    border-radius: 2px;
+    padding-left: .8rem;
+    padding-top: .5rem;
+    padding-bottom: .7rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+/* --- abbr --- */
+abbr {
+    cursor: help;
+}
+
+/* --- hr  --- */
+hr {
+    border: 1px solid var(--background-color-pale);
+    border-top: 1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* --- details & summary --- */
+details {
+    background-color: var(--background-color-pale);
+    border: 1px solid var(--accent-color);
+    border-radius: 2px;
+    padding-left: .4rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+summary:hover {
+    cursor: pointer;
+}
+
+/* --- list --- */
+li {
+    list-style-position: inside;
+}
+
+/* table */
+table, th, td {
+    border: 1px solid var(--background-color-pale);
+    border-collapse: collapse;
+    text-align: center;
+
+}
+
+table {
+    width: 100%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+th, td {
+    padding: .5rem;
+}
+
+/* input submit and button */
+input[type="submit"], button {
+    color: var(--primary-color);
+    background-color: var(--background-color-pale);
+    border: 1px solid var(--accent-color);
+    border-radius: 2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    transition: background-color 100ms ease-in, color 100ms ease-in;
+}
+
+input[type="submit"]:hover, button:hover {
+    cursor: pointer;
+    background-color: var(--accent-color);
+}
+
+/* input text */
+input[type="text"], textarea {
+    color: var(--primary-color);
+    background-color: var(--background-accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 1px;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+input[type="text"]:focus, textarea:focus, input[type="email"] {
+    outline: none;
+}
+
+/* nav */
+/* styles of specific tags are changed if parent is a nav tag */
+header, nav {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+header h2 {
+    font-size: 1.5rem;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    padding-left: .2rem;
+    padding-right: .2rem;
+}
+
+nav a {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+    background-color: transparent;
+}
+
+/* footer */
+footer {
+    text-align: center;
+}
+
+footer p {
+    color: var(--primary-color-pale);
+}
+
+footer a, footer a:visited{
+    color: var(--primary-color-pale);
+}
