@@ -1,2 +1,1 @@
-# omen.css
-Almost classless CSS framework
+# yac.css: Yet another classless CSS framework
