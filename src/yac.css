@@ -2,10 +2,11 @@
 @media (prefers-color-scheme: light) {
     :root {
         --primary-color: rgb(49,49,49);
-        --primary-color-pale: rgb(93, 93, 93);
-        --accent-color: rgb(225, 160, 91);
+        --primary-color-pale: rgb(51, 51, 51);
+        --accent-color: rgb(91, 140, 225);
 
         --background-color: rgb(233,233,233);
+        --background-color-pale: rgb(197, 197, 197);
     }
 }
 
@@ -15,8 +16,8 @@
         --primary-color-pale: rgb(184, 184, 184);
         --accent-color: rgb(136, 60, 179);
 
-        --background-color: rgb(18,18,18);
-        --background-color-pale: rgb(30, 30, 30);
+        --background-color: #1b1b1e;
+        --background-color-pale: rgb(32, 32, 32);
     }
 }
 
@@ -93,15 +94,11 @@ h6 {
 /* a */
 a {
     color: var(--accent-color);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:visited {
     color: var(--accent-color);
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 /* mark */
@@ -124,7 +121,7 @@ code, samp, var, kbd {
 pre {
     color: var(--primary-color-pale);
     background-color: var(--background-color-pale);
-    border: 1px solid var(--primary-color-pale);
+    border: 1px solid var(--accent-color);
     border-radius: 2px;
     padding-left: .8rem;
     padding-top: .5rem;
@@ -227,10 +224,10 @@ input[type="submit"]:hover, button:hover {
     background-color: var(--accent-color);
 }
 
-/* input text */
-input[type="text"], textarea {
+/* input */
+input, textarea {
     color: var(--primary-color);
-    background-color: var(--background-accent-color);
+    background-color: var(--background-color-pale);
     border: 1px solid var(--accent-color);
     border-radius: 1px;
     padding-left: .2rem;
@@ -241,7 +238,7 @@ input[type="text"], textarea {
     margin-bottom: .5rem;
 }
 
-input[type="text"]:focus, textarea:focus, input[type="email"] {
+input:focus, textarea:focus{
     outline: none;
 }
 
