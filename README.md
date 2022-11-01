@@ -2,4 +2,14 @@
   <img src=".\media\banner.png" alt="banner" style="width: 265px">
 </p>
 
-<h3 align="center" >Simple classless CSS framework</h3>
+<h1 style="text-align: center">acid.css: A poisonous (& classless) CSS framework</h1>
+
+
+## How to use
+
+- Download the latest release
+- Add `<link rel="stylesheet" href="./acid.css">` to your `<head>` tag
+
+## About
+
+Made with ♥ by [aaronlyy](https://github.com/aaronlyy)
