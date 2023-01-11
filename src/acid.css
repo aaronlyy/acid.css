@@ -14,7 +14,7 @@
     :root {
         --primary-color: rgb(255,255,255);
         --primary-color-pale: rgb(184, 184, 184);
-        --accent-color: rgb(136, 60, 179);
+        --accent-color: rgb(106, 197, 134);
 
         --background-color: #1b1b1e;
         --background-color-pale: rgb(32, 32, 32);
@@ -266,7 +266,6 @@ nav li {
 
 nav a {
     font-size: 1.2rem;
-    text-decoration: none;
 }
 
 nav a:hover {
