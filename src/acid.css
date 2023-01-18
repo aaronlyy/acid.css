@@ -3,10 +3,10 @@
     :root {
         --primary-color: rgb(49,49,49);
         --primary-color-pale: rgb(51, 51, 51);
-        --accent-color: rgb(91, 140, 225);
+        --accent-color: rgb(106, 197, 134);
 
-        --background-color: rgb(233,233,233);
-        --background-color-pale: rgb(197, 197, 197);
+        --background-color: rgb(245, 245, 245);
+        --background-color-pale: rgb(228, 228, 228);
     }
 }
 
@@ -17,7 +17,7 @@
         --accent-color: rgb(106, 197, 134);
 
         --background-color: #1b1b1e;
-        --background-color-pale: rgb(32, 32, 32);
+        --background-color-pale: rgb(37, 37, 37);
     }
 }
 
@@ -47,7 +47,7 @@ body {
     color: var(--primary-color);
 
     /* set max width and center body */
-    max-width: 700px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 
@@ -116,6 +116,10 @@ code, samp, var, kbd {
     border-radius: 2px;
     padding-left: .5rem;
     padding-right: .5rem;
+}
+
+del {
+    color: rgb(203, 78, 78);
 }
 
 pre {
@@ -188,7 +192,7 @@ li {
     list-style-position: inside;
 }
 
-/* table */
+/* --- table --- */
 table, th, td {
     border: 1px solid var(--background-color-pale);
     border-collapse: collapse;
@@ -204,19 +208,38 @@ table {
 
 th, td {
     padding: .5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* input submit and button */
+/* --- figure & figcaption --- */
+
+figure {
+    margin-top: .5rem;
+}
+
+figure figcaption {
+    color: var(--primary-color-pale);
+}
+
+/* --- img --- */
+
+img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+/* --- input submit and button --- */
 input[type="submit"], button {
     color: var(--primary-color);
     background-color: var(--background-color-pale);
     border: 1px solid var(--accent-color);
-    border-radius: 2px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    transition: background-color 100ms ease-in, color 100ms ease-in;
+    border-radius: 4px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    transition: background-color 50ms ease-in, color 100ms ease-in;
 }
 
 input[type="submit"]:hover, button:hover {
@@ -224,12 +247,12 @@ input[type="submit"]:hover, button:hover {
     background-color: var(--accent-color);
 }
 
-/* input */
+/* --- input --- */
 input, textarea {
     color: var(--primary-color);
     background-color: var(--background-color-pale);
     border: 1px solid var(--accent-color);
-    border-radius: 1px;
+    border-radius: 4px;
     padding-left: .2rem;
     padding-right: .2rem;
     padding-top: .2rem;
