@@ -265,6 +265,10 @@ input:focus, textarea:focus{
     outline: none;
 }
 
+textarea {
+    width: 100%;
+}
+
 /* nav */
 /* styles of specific tags are changed if parent is a nav tag */
 header, nav {
