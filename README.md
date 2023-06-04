@@ -10,6 +10,11 @@
 - Download the latest release
 - Add `<link rel="stylesheet" href="./acid.css">` to your `<head>` tag
 
+## Roadmap
+
+- Add header & navbar styling
+- Fix some media queries
+
 ## About
 
 Made with ♥ by [aaronlyy](https://github.com/aaronlyy)

@@ -68,11 +68,11 @@ body {
 
 /* h tags font sizes */
 h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
 }
 
 h3 {
@@ -80,15 +80,15 @@ h3 {
 }
 
 h4 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
 }
 
 h5 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 h6 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 /* a */
@@ -192,6 +192,11 @@ li {
     list-style-position: inside;
 }
 
+/* definition list */
+dt {
+    font-weight: bold;
+}
+
 /* --- table --- */
 table, th, td {
     border: 1px solid var(--background-color-pale);
@@ -211,6 +216,7 @@ th, td {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 /* --- figure & figcaption --- */
 
@@ -271,8 +277,15 @@ textarea {
 
 /* nav */
 /* styles of specific tags are changed if parent is a nav tag */
-header, nav {
+header {
     text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header h1 {
@@ -289,10 +302,11 @@ nav li {
     display: inline;
     padding-left: .2rem;
     padding-right: .2rem;
+    text-decoration: underline;
 }
 
-nav a {
-    font-size: 1.2rem;
+nav li:hover {
+    cursor: pointer;
 }
 
 nav a:hover {
